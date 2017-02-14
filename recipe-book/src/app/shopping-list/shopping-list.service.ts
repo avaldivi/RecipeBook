@@ -24,4 +24,7 @@ export class ShoppingListService {
     this.items[this.items.indexOf(oldItem)] = newItem;
   }
 
+  deleteItem(item: Ingredient) {
+    this.items.splice(this.items.indexOf(item), 1);
+  }
 }
